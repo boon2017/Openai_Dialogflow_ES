@@ -1,0 +1,19 @@
+{
+  "name": "openai_diaglogflow_es",
+  "version": "1.0.0",
+  "description": "Simple OpenAI Chatbot Integrated with Dialogflow ES",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boon2017/Openai_Dialogflow_ES.git"
+  },
+  "author": "Chatchai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boon2017/Openai_Dialogflow_ES/issues"
+  },
+  "homepage": "https://github.com/boon2017/Openai_Dialogflow_ES#readme"
+}
