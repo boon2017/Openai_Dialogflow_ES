@@ -17,6 +17,7 @@ const textGeneration = async (prompt) => {
 
 
     try {
+        const start = Date.now();
         const response = await openai.createCompletion({
             model: 'text-davinci-003',
             prompt: `Human: ${prompt}\nAI: `,
@@ -27,7 +28,9 @@ const textGeneration = async (prompt) => {
             presence_penalty: 0.6,
             stop: ['Human:', 'AI:']
         });
-   
+        const end = Date.now();
+        const responseTime = end - start;
+        console.log(`Response time: ${responseTime}ms`);
         return {
             status: 1,
             response: `${response.data.choices[0].text}`
