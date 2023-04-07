@@ -19,7 +19,7 @@ const textGeneration = async (prompt) => {
     try {
         const start = Date.now();
         const response = await openai.createCompletion({
-            model: 'text-davinci-003',
+            model: 'gpt-3.5-turbo', // Update the model here
             prompt: `Human: ${prompt}\nAI: `,
             temperature: 0.9,
             max_tokens: 500,
